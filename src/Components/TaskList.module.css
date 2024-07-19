@@ -1,0 +1,42 @@
+.task {
+    margin-top: 3rem;
+}
+
+.task div {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    column-gap: 6rem;
+}
+
+.task img {
+    margin-bottom: 10px;
+}
+
+.taskp1 {
+    color: var(--blue)
+}
+
+.taskp2 {
+    color: var(--purple);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    color: var(--gray-300);
+    gap: 5px;
+}
+
+.newTaskList {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    list-style-type: none;
+}

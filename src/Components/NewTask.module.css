@@ -1,0 +1,26 @@
+.task {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    gap: 10px;
+}
+
+.task input {
+    padding: 15px;
+    width: 40%;
+    border-radius: 5px;
+    border: 0;
+    background: var(--gray-500);
+    color: var(--gray-100);
+}
+
+.task button {
+    display: flex;
+    gap: 5px;
+    background: var(--blue-dark);
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    border: 0;
+}

@@ -1,25 +1,28 @@
 import { useState } from 'react';
 import { Header } from './Components/Header'
-import { NewTask } from './Components/NewTask'
+import { NewTaskForm } from './Components/NewTask'
 import { TaskList } from './Components/TaskList'
 import './global.css'
 
 export function App() {
   const [tasks, setTasks] = useState([]);
 
-  function addTask(task) {
-    console.log(task);
-    setTasks([...tasks, task])
+  function handleAddTask(newTask) {
+    setTasks([...tasks, newTask]);
+  }
+
+  function handleToggleTaskCompletion(updatedTasks) {
+    setTasks(updatedTasks);
   }
 
   return (
     <div>
       <Header />
-      <NewTask onAddTask={addTask} />
+      <NewTaskForm onAddTask={handleAddTask} />
       <TaskList
         tasks={tasks}
-        onAddTask={addTask}
+        onToggleTaskCompletion={handleToggleTaskCompletion}
       />
     </div>
-  )
+  );
 }
